@@ -54,11 +54,10 @@ if uploaded_file is not None:
     st.dataframe(input_data)
 
     #direktori tempat penyimpanan ketiga model yang telah di dump sebelumnya
-    model_directory = r'C:\Users\Asus\Kuliah\Semester 5\PMDPM (Pembelajaran Mesin dan Pembelajaran Mendalam\Pertemuan 10\Tugas4_A_11661'
     model_path = {
-        "AGG_model" : os.path.join(model_directory, r'AGG_model.pkl'),
-        "KMeans_model" : os.path.join(model_directory, r'KMeans_model.pkl'),
-        "DBSCAN_model" : os.path.join(model_directory, r'DBSCAN_model.pkl'),
+        "AGG_model" : r'AGG_model.pkl',
+        "KMeans_model" : r'KMeans_model.pkl',
+        "DBSCAN_model" : r'DBSCAN_model.pkl',
     }
 
     #Load model ketiga moodel ke dalam dictionary
